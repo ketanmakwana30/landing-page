@@ -1,0 +1,112 @@
+/* Modern Reset & Box-Sizing Fix */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Crucial: Prevents padding from breaking layout widths */
+}
+
+body {
+  font-family:
+    "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* Clean, modern font stack */
+  background: #f8f9fa; /* Softer, cleaner off-white */
+  color: #333333;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column; /* Allows footer to sit perfectly at the bottom */
+}
+
+header {
+  background: #1a1a1a;
+  color: #ffffff;
+  padding: 30px 20px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+ul {
+  display: flex;
+  gap: 40px;
+  font-size: 18px;
+  list-style-type: none;
+}
+
+ul li {
+  transition: all 0.3s linear;
+}
+
+ul li:hover {
+  color: orange;
+}
+/* Container / About Section */
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px; /* Gives breathing room between text and image */
+  max-width: 1000px;
+  margin: 60px auto; /* Centers the container horizontally */
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 12px; /* Soft, modern corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); /* Soft shadow instead of harsh border */
+}
+
+.left {
+  flex: 1;
+  text-align: left; /* Reading long paragraphs centered is tough on the eyes */
+}
+
+.left p {
+  color: #555;
+  font-size: 1.05rem;
+}
+
+.right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.right img {
+  max-height: 350px;
+  width: 100%;
+  object-fit: cover; /* Ensures the image doesn't distort */
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Modern Sticky Footer */
+footer {
+  margin-top: auto; /* Pushes footer to the bottom naturally without breaking layouts */
+  padding: 20px;
+  color: #a0a0a0;
+  background-color: #1a1a1a;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* Responsive Design for Mobile Devices */
+@media (max-width: 768px) {
+  .about {
+    flex-direction: column-reverse; /* Stacks image on top of text on mobile */
+    margin: 20px;
+    gap: 20px;
+  }
+
+  .left {
+    text-align: center;
+  }
+}
+
+section button {
+  margin-top: 50px;
+  background-color: rgb(246, 255, 0);
+}

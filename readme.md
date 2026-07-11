@@ -9,7 +9,7 @@ This project showcases a clean landing page design with a responsive navigation 
 # 🚀 Live Demo
 
 🌐 **View Live Project:**
-https://ketanmakwana30.github.io/landing-page/
+https://landing-page-eta-two-91.vercel.app/
 
 <br>
 
@@ -71,4 +71,4 @@ Open the `index.html` file in your browser.
 
 GitHub: https://github.com/ketanmakwana30
 
-Live Project: https://ketanmakwana30.github.io/landing-page/
+Live Project: https://landing-page-eta-two-91.vercel.app/
